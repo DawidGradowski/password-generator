@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>PASSWORD GENERATOR</title>
+</head>
+<body>
+    <main>
+        <h1>PASSWORD GENERATOR</h1>
+        <h2>GENERATED PASSWORD:</h2>
+        <p class="generated-pass">Your password</p>
+        <p class="pass-strength">YOUR PASSWORD IS <span class="pass-strengt-lvl">WEAK</span></p>
+
+        <label for="pass-length">Length:
+            <input type="number" name="pass-length" id="pass-length" class="pass-length" min="4">
+        </label>
+
+        <label for="char-small">Small letters:
+            <input type="checkbox" name="char-type" id="char-small" class="char-type">
+        </label>
+        
+        <label for="char-grand">Grand letters:
+            <input type="checkbox" name="char-type" id="char-grand" class="char-type">
+        </label>
+        
+        <label for="char-numbs">Numbers:
+            <input type="checkbox" name="char-type" id="char-numbs" class="char-type">
+        </label>
+
+        <label for="char-symbols">Symbols:
+            <input type="checkbox" name="char-type" id="char-symbols" class="char-type">
+        </label>
+        
+        <button id="generate-btn">GENERATE PASSWORD</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
